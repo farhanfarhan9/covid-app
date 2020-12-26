@@ -1,0 +1,17 @@
+/*login register form*/
+.loginregister{
+    background: transparent;
+  	border: none;
+	border-bottom: 1px solid #000000;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0;
+	width: 21.2rem;
+	padding-left: .5rem;
+	padding-top: 1rem;
+	padding-bottom: .5rem;
+}
+.text-muted{
+	margin-top: -1.4rem;
+	font-size: .8rem;
+}
