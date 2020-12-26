@@ -1,18 +1,45 @@
 @extends('layouts.app')
 @section('content')
-	<div class="container-fluid bg-light text-dark py-5">
-		<div class="row justify-content-center">
-			<div class="col-sm-8 col-xs-8 text-center">
-				<h1>Diagnose covid-19</h1>
-				<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+<div class="bg-light text-dark">
+	<div class="container py-5">
+		<div class="row ">
+			<div class="col-sm-8">
+				<div class="row">
+					<div class="col-sm-6 d-flex flex-row py-2">
+						<img src="https://dummyimage.com/90 " height="90">
+						<p class="pl-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, natus.</p>	
+					</div>
+					<div class="col-sm-6 d-flex flex-row py-2">
+						<img src="https://dummyimage.com/90 " height="90">
+						<p class="pl-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, natus.</p>	
+					</div>
+					<div class="col-sm-6 d-flex flex-row py-2">
+						<img src="https://dummyimage.com/90 " height="90">
+						<p class="pl-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, natus.</p>	
+					</div>
+					<div class="col-sm-6 d-flex flex-row py-2">
+						<img src="https://dummyimage.com/90 " height="90">
+						<p class="pl-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit, natus.</p>
+
+					</div>
+				</div>			
+			</div>
+			<div class="col-sm-4 border-left text-center">
+				<h1>Lorem ipsum dolor sit amet. </h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla facere inventore ipsam fugit rem est, adipisci optio minus, quia tempora.</p>
+		    	<div class="btn btn-outline-primary">Diagnosa</div>
+				
 			</div>
 		</div>
-		<div class="row justify-content-center">
-		    <div class="col-xs-1">
-		    	<div class="btn btn-outline-primary">Diagnosa</div>
-		    </div>
-		</div>
+
+		<!-- <div class="row justify-content-end">
+			<div class="col-sm-4 ">
+				<h1>Lorem ipsum dolor sit amet. </h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla facere inventore ipsam fugit rem est, adipisci optio minus, quia tempora.</p>
+			</div>
+		</div> -->
 	</div>
+</div>
 @endsection
 
 @section('footer')
