@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container py-4">
-    <div class="card p-3">
+    <div class="card p-3 px-5">
         <div class="row ">
             <div class="col-md-4">
                 <form method="POST" action="{{ route('login') }}">
@@ -45,7 +45,7 @@
                 </form>
                 <div class="form-group ">
                     <a href="{{ route('register') }}" class="text-decoration-none">
-                        <button type="submit" class="btn btn-danger btn-block">
+                        <button type="submit" class="btn btn-success btn-block">
                             {{ __('Register') }}
                         </button>
                     </a>
@@ -62,4 +62,25 @@
         </div>
     </div>
 </div>
+@endsection
+@section('footer')
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-8 text-center py-3">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </div>
+        <div class="row py-4">
+            <div class="col">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="col">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="col">Lorem, ipsum dolor sit amet consectetur adipisicing elit.Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
+        </div>
+        <div class="row justify-content-center py-5">
+            <div class="col-sm-8 text-center">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
 @endsection
