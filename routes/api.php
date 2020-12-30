@@ -17,3 +17,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/admin/members', 'MemberController@index');
+Route::post('/admin/members', 'MemberController@store');
+Route::put('/admin/members/{id}', 'MemberController@update');
+Route::delete('/admin/members/{id}', 'MemberController@destroy');

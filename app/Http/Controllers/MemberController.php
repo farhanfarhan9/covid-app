@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Member;
+
 class MemberController extends Controller
 {
     /**
@@ -14,7 +15,8 @@ class MemberController extends Controller
     public function index()
     {
         $members = Member::all();
-        return view('admin.members.index', compact('members'));
+        return $members;
+        // return view('admin.members.index', compact('members'));
     }
 
     /**
@@ -51,7 +53,8 @@ class MemberController extends Controller
         $new_member->alamat = $request->get('alamat');
         $new_member->status = $request->get('status');
         $new_member->save();
-        return redirect('/admin/members');
+        return "data behasil masuk";
+        // return redirect('/admin/members');
     }
 
     /**
@@ -104,7 +107,8 @@ class MemberController extends Controller
         $member->alamat = $request->get('alamat');
         $member->status = $request->get('status');
         $member->save();
-        return redirect('/admin/members');
+        return 'data berhasil diedit';
+        // return redirect('/admin/members');
     }
 
     /**
@@ -116,6 +120,7 @@ class MemberController extends Controller
     public function destroy(Member $member)
     {
         $member->delete();
-        return redirect('/admin/members');
+        return 'data berhasil dihapus';
+        // return redirect('/admin/members');
     }
 }
