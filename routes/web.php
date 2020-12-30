@@ -22,3 +22,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 Route::resource('diagnose', 'DiagnoseController');
 Route::resource('history', 'HistoryController');
+Route::resource('admin/members', 'MemberController');
+Route::resource('admin/diagnosa', 'DiagnoseController');
