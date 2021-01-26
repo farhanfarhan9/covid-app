@@ -5,7 +5,7 @@
     <div class="card p-3 px-5">
         <div class="row ">
             <div class="col-md-4">
-                <form method="POST" action="{{ route('login') }}">
+                <form method="POST" action="{{ route('register') }}">
                     @csrf
                     <h3 class="font-weight-normal text-center">Daftar</h3>
                     <div class="form-group py-2">
@@ -19,7 +19,7 @@
                     </div>
 
                     <div class="form-group py-2">
-                        <input id="username" type="text" class="loginregister @error('username') is-invalid @enderror" username="username" value="{{ old('username') }}" required autocomplete="username" autofocus placeholder="Nama Pengguna">
+                        <input id="username" type="text" class="loginregister @error('username') is-invalid @enderror" username="username" value="{{ old('username') }}" required autocomplete="username" placeholder="Nama Pengguna">
 
                             @error('username')
                                 <span class="invalid-feedback" role="alert">

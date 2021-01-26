@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers\Auth;
 
+use App\Admin;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -35,6 +38,23 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest')->except('logout');
+        $this->middleware('guest:web,admin')->except('logout');
+    }
+
+    protected function guard($guardName = 'web') {
+        return Auth::guard($guardName);
+    }
+
+    protected function attemptLogin(Request $request)
+    {
+        $asAdmin = $this->guard('admin')->attempt(
+            $this->credentials($request), $request->filled('remember')
+        );
+
+        if ($asAdmin) return $asAdmin;
+
+        return $this->guard()->attempt(
+            $this->credentials($request), $request->filled('remember')
+        );
     }
 }
