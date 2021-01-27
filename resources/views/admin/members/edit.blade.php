@@ -22,7 +22,7 @@
 
                             <div class="form-group">
                                 <label>Nama Member</label>
-                                <input type="text" class="form-control" name="nama_member" value="{{ $member->nama_member }}">
+                                <input type="text" class="form-control" name="nama_member" value="{{ $member->name }}">
                             </div>
                             <div class="form-group">
                                 <label>Jenis Kelamin</label>
@@ -53,7 +53,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Password</label>
-                                <input type="text" class="form-control" name="password" value="{{ $member->password }}">
+                                <input type="text" class="form-control" name="password">
                             </div>
                             <div class="form-group">
                                 <label>Nomor hp</label>

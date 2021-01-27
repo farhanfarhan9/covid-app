@@ -16,12 +16,11 @@
                         </div>
                     </div>
                     <div class="col-sm-9 border-left">
-                        <h4>{{ $member->nama_member }}</h4>
+                        <h4>{{ $member->name }}</h4>
                         <p>Jenis Kelamin : {{ $member->jenis_kelamin }}</p>
                         <p>Tempat Lahir : {{ $member->tempat_lahir }}</p>
                         <p>Tanggal Lahir : {{ $member->tanggal_lahir }}</p>
                         <p>Email : {{ $member->email }}</p>
-                        <p>Password : {{ $member->password }}</p>
                         <p>Nomor hp : {{ $member->nomor_hp }}</p>
                         <p>
                             Foto Profil <br>

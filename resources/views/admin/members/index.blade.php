@@ -29,10 +29,10 @@
                             </thead>
                             <tbody>
                                 @php $no=1 @endphp
-                                @foreach($members as $member)
+                                @foreach($users as $member)
                                 <tr>
                                     <td><?= $no ?></td>
-                                    <td>{{ $member->nama_member}}</td>
+                                    <td>{{ $member->name}}</td>
                                     <td>{{ $member->email}}</td>
                                     <td><img src="{{ asset('storage/'.$member->foto_profil) }}" alt="" width="120px"></td>
                                     <td>
