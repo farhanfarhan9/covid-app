@@ -24,3 +24,6 @@ Route::resource('diagnose', 'DiagnoseController');
 Route::resource('history', 'HistoryController');
 Route::resource('admin/members', 'UserController');
 Route::resource('admin/diagnosa', 'DiagnoseController');
+Route::get('/member/{id}', 'ProfileController@show')->name('profile.show');
+Route::get('/member/{id}/edit', 'ProfileController@edit')->name('profile.edit');
+Route::put('/member/{member}', 'ProfileController@update')->name('profile.update');

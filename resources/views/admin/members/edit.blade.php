@@ -63,7 +63,6 @@
                                 <label>Foto</label> <br>
                                 <img src="{{ asset('storage/'.$member->foto_profil) }}" alt="" width="200px" class="my-3">
                                 <input type="file" class="form-control-file" name="foto_profil">
-
                             </div>
                             <div class="form-group">
                                 <label>Alamat</label>
